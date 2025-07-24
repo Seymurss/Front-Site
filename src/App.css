@@ -1,0 +1,48 @@
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#root{
+  width: 100%;
+}
+
+
+.background-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  z-index: 0;
+}
+
+.grid-box {
+
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 1px solid #efeaea;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+
+
+
+

@@ -1,0 +1,198 @@
+.awards{
+
+    background: #e6eaee;
+    margin-left: 9%;
+    width: 82.9%;
+    position: relative;
+    margin-top: -37px;
+    border-top: 1px solid #00000033;
+    display: flex;
+    flex-wrap: wrap;
+
+    .certificates{
+
+      width: 60%; margin-top: 62px;
+
+        .certificate{
+          width: 87%;
+          height: 127px;
+          background: #ffffff;
+          border-radius: 5px;
+          margin-top: 15px;
+          margin-left: 57px;
+          transition: 0.5s;
+
+
+          &:hover{
+            box-shadow: 0px 0px 10px #b7afc8;
+          }
+
+
+              .cert-leftbox{
+                height: 100%;
+                border: 1px solid;
+                width: 245px;
+              }
+              .cert-rightbox{
+                height: 100%;
+                width: 259px;
+                border: 1px solid;
+              }
+          
+              &:nth-child(1) img {
+                margin: 7px 10px;
+                width: 119px;
+
+              }
+          
+              &:nth-child(2) img {
+                margin: 14px 2px;
+                 width: 62px;
+
+              }
+
+              &:nth-child(3) img {
+                margin: 13px 10px;
+                width: 48px;
+
+              }
+
+              &:nth-child(3) p {
+              margin-left: 83%;
+
+              }
+
+
+              p{
+                position: absolute;
+                margin-left: 90%;
+                color: #000000a6;
+              }
+
+              &:nth-child(1) span{
+                position: absolute;
+                margin-top: 15.8%;
+                margin-left: -20.4%;
+                font-size: 15px;
+                font-family: system-ui;
+                color: #38403f;
+              }
+              &:nth-child(2) span{
+                position: absolute;
+                margin-top: 15.8%;
+                margin-left: -8%;
+                font-size: 15px;
+                font-family: system-ui;
+                color: #38403f;
+              }
+
+              &:nth-child(3) span{
+                position: absolute;
+                margin-top: 12.8%;
+                margin-left: 1%;
+                font-size: 15px;
+                font-family: system-ui;
+                color: #38403f;
+              }
+        }
+    }
+
+    .leftbox{
+        height: 300px;
+        width: 35%;
+
+        .turn{
+            padding-top: 29%;
+            padding-left: 15%;
+
+            p{
+                font-size: 15px;
+                color: #0000007a;
+                letter-spacing: 1.7px;
+            }
+            h1{
+                font-weight: 600;
+                line-height: 1.1;
+                font-size: 43px;
+                font-family: system-ui;
+                margin-top: -10px;
+
+            span{
+                color: #55e6a5;
+            }
+
+        }
+    }
+
+    }
+    .rightbox{
+        height: 300px;
+        width: 61.4%;
+    }
+}
+
+
+
+
+.exper{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5%;
+  display: flex ;
+}
+
+
+
+
+
+
+.experience-section {
+  padding: 9px;
+  margin-left: -19px;
+  width: 39%;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+  margin-left: 60%;
+}
+
+.experience-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.company {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.role {
+  font-size: 16px;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+.period {
+  font-size: 14px;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.description {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}

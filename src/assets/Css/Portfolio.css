@@ -1,0 +1,136 @@
+.Portfolio{
+    background: #e6eaee;
+    margin-left: 9%;
+    width: 82.9%;
+    position: relative;
+    margin-top: 0px;
+    border-top: 1px solid #00000033;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-right-radius: 43px;
+
+
+
+    .turn{
+        padding-top: 8%;
+        padding-left: 6%;
+
+        p{
+            font-size: 15px;
+            color: #0000007a;
+            letter-spacing: 1.7px;
+        }
+        h1{
+            font-weight: 600;
+            line-height: 1.1;
+            font-size: 43px;
+            font-family: system-ui;
+            margin-top: -10px;
+
+        span{
+            color: #55e6a5;
+        }
+
+    }
+  }
+
+  .link{
+
+    margin: 9.4% 83%;
+    position: absolute;
+    width: 156px;
+    a{
+        font-weight: 400;      
+        font-size: 15px;
+        color: #0000007a;
+        letter-spacing: 1.7px;
+    }
+   }
+
+   .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+
+
+    .prbox{
+        height: 400px;
+        width: 470px;
+        margin-top: 55px;
+        border-radius: 5px;
+        border: 1px solid #0000003b;
+        transition: 0.4s;
+
+        &:hover .imgbox {
+            
+           filter: opacity(0.5);
+
+        }
+
+        &:hover .goproject {
+            color: #55e6a5;
+        }
+
+        .imgbox{
+
+            border-radius: 5px;
+            transition: 0.5s;
+
+            img{
+                height: 359px;
+                width: 450px;
+                margin-left: 10px;
+                margin-top: 11px;
+                border-radius: 5px;
+            }
+        }
+        .infobox{
+            display: flex;
+
+            span{
+                margin-left: 12px;
+                font-size: 20px;
+                margin-top: 24px;
+                font-family: system-ui;
+                font-weight: 500;
+                color: #000000c7;
+            }
+        }
+        .goproject{
+
+            position: absolute !important;
+                margin-left: 90% !important;
+                margin-top: -32px !important;
+                font-size: 20px !important;
+        
+        }
+
+        p{
+            margin-left: 10px;
+            margin-top: 16px;
+            color: #4f8d65;
+        }
+    }
+   }
+
+}
+
+
+.pagination-buttons{
+    margin-left: 69.8%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 27px;
+
+    span{
+            margin-top: 10px;
+
+    }
+
+    button{
+        width: 107px;
+    }
+}

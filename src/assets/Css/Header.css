@@ -1,0 +1,251 @@
+.Header{
+    margin-left: 9%;
+    width: 82.9%;
+    height: 619px;
+    position: relative;
+
+    .info{
+        background: #e6eaee;
+        height: 619px;
+        border-radius: 20px;
+        display: flex;
+
+        .triangle-right {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 76px solid #e6eaee;
+            border-right: 80px solid transparent;
+            position: absolute;
+            left: 31.9%;
+            bottom: -76px;
+        }
+
+        .infoCard{
+            height: 100%;
+            border: none;
+            width: 727px;
+            margin-left: 3.9%;
+
+            .Carerinfo{
+                display: flex;
+
+                div{
+                
+                    width: 200px;
+                    display: flex;
+
+                    .butn.butn-bord {
+                        height: 50px;
+                        border-color: #000;
+                        background: transparent;
+                        color: #000;
+                        transition: all .4s;
+                        border-radius: 5px;
+                        padding: 13px 36px;
+                        border: 1px solid #000000;
+                        margin-top: 35px;
+                        transform: skewY(10deg);
+
+                        &:hover{
+                            transform: skewY(0deg);
+                            background: black;
+                            color: white;
+                        }
+                    }
+
+                    h1{
+                        font-size: 65px;
+                        font-family: system-ui;
+                    }
+    
+                    p{
+                        margin-top: 44px;
+                        margin-left: 4%;
+                        font-size: 15px;
+                        color: #0000009c;
+                        font-family: sans-serif;
+                        line-height: 26px;
+                    }
+                }
+            }
+
+
+           h1{
+                font-weight: 500;
+                line-height: 1.3;
+                font-size: 55px;
+                margin: 9% 2.8%;
+                font-family: system-ui;
+
+            .name{
+                color: #55e6a5;
+            }
+            .bord{
+                padding: 0 20px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                position: relative;
+                &::before{
+                    top: -3px;
+                    left: -3px;
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: #444;
+                    position: absolute;
+                    pointer-events: none;  
+                }
+
+                &::after{
+                    top: -3px;
+                    right: -3px;
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: #444;
+                    position: absolute;
+                    pointer-events: none;
+                }
+
+                i{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    pointer-events: none;
+
+                    &::before{
+                        bottom: -3px;
+                        left: -3px;
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: #444;
+                        position: absolute;
+                    }
+
+                    &::after{
+                        bottom: -3px;
+                        right: -3px;
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: #444;
+                        position: absolute;
+                    }
+                }
+            }
+           }
+        }
+
+        .profileCard{
+            height: 695px;
+            width: 369px;
+            background: #e6eaee;
+            border-radius: 19px;
+            .imgcard{
+                height: 490px;
+                width: 292px;
+                border: 1px solid #0000001c;
+                margin: 74px 44px;
+
+                .profilInfo{
+                    span{
+                        margin-left: 20%;
+                        font-size: 22px;
+                        font-weight: 500;
+                        font-family: sans-serif;
+                        color: #000000;
+                    }
+                    p{
+                        margin-left: 71px;
+                        margin-top: 2px;
+                        font-size: 15px;
+                        font-family: sans-serif;
+                        margin-bottom: 22px;
+                        color: #000000a3;
+                    }
+                    .profilsosial{
+                        display: flex;
+                        justify-content: space-evenly;
+                        a{
+                            border: 1px solid #0000003b;
+                            padding: 9px 13px;
+                            margin-right: -15px;
+                            border-radius: 4px;
+                            color: #000000c2;
+                            margin-left: -15px;
+                            transition: 0.3s;
+                            cursor: pointer;
+
+                            &:hover{
+                               background: white;
+                            }
+                        }
+                    }
+                }
+                .github{
+                    position: absolute;
+                    margin: -17% 22.8%;
+                    height: 30px;
+                    transform: rotate(20deg);
+                
+                }
+
+                .Javascript{
+                    position: absolute;
+                    margin: -24% -0%;
+                    height: 41px;
+                    transform: rotate(13deg);
+                }
+
+                .VsCode{
+                    position: absolute;
+                    margin: -9% 7%;
+                    height: 28px;
+                    transform: rotate(13deg);
+                }
+
+                .img{
+                    height: 55%;
+                    width: 86%;
+                    margin: 32px 20px;
+                    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+/* animations */
+
+.bouncing-icon {
+    animation: bounce 3s infinite;
+    font-size: 32px;
+    color: #fff; /* istəyə uyğun */
+  }
+  
+  /* 10px yuxarı-aşağı hərəkət */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

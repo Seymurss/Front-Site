@@ -1,0 +1,118 @@
+.services{
+    background: #e6eaee;
+    margin-left: 9%;
+    width: 82.9%;
+    position: relative;
+    margin-top: 125px;
+    border-radius: 19px;
+    padding-top: 5%;
+    padding-bottom: 75px;
+
+
+    .turn{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5%;
+
+        p{
+            font-family: sans-serif;
+            font-weight: 500;
+            margin-bottom: 0px;
+        }
+
+        h1{
+            font-weight: 600;
+            font-size: 38px;
+            font-family: system-ui;
+            color: #000000de;
+            line-height: 50px;
+
+            span{
+                color: #55e6a5;
+
+            }
+            p{
+                font-size: 19px;
+                font-family: system-ui;
+                margin-bottom: -22px;
+                color: #0000009e;
+            
+            }
+        }
+    }
+
+    .servicesbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .office{
+            span{
+                margin-left: -256px;
+            }
+        }
+        div{
+            height: 269px;
+            width: 507px;
+            background: #ffffffab;
+            border-radius: 10px;
+            margin-bottom:40px ;
+
+            img{
+                height: 80px;
+                margin-top: 30px;
+                margin-left: 30px;
+                filter: opacity(0.7);
+                margin-bottom: 40px;
+            }
+            span{
+                margin-top: 119px;
+                position: absolute;
+                margin-left: -16%;
+                font-size: x-large;
+                font-family: system-ui;
+            }
+
+            p{
+                text-align: left;
+                margin-left: 28px;
+                font-size: 16px;
+                margin-top: 20px;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
+
+.links{
+    background: #e6eaee;
+    position: absolute;
+    width: 607px;
+    margin-left: 47%;
+    border-radius: 15px;
+    margin-top: 50px;
+
+    ul{
+        display: flex;
+        height: 84.9px;
+        align-items: center;
+
+        &::after{
+            content: '';
+            width: 142px;
+            height: 0;
+            border-bottom: 75px solid #e6eaee;
+            border-left: 75px solid transparent;
+            position: absolute;
+            left: -128px;
+            bottom: 26px;
+        }
+
+        li{
+            list-style-type: none;
+            margin-left: 40px;
+            font-size: 14px;
+        }
+    }
+}

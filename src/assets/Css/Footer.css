@@ -1,0 +1,19 @@
+.footer{
+    background: #e6eaee;
+    margin-left: 9%;
+    width: 82.9%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #00000040;
+    p{
+        font-family: system-ui;
+        font-size: 15px;
+        color: #000000ab;
+
+        span{
+            color: #38ad7a;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+
+
+.slidebox{
+  height: 140px;
+  width: 220px !important;
+  border-radius: 10px;
+  margin-left: 10px;
+  background: white;
+  cursor: grab;
+  outline: none;
+
+  .percent{
+    height: 2px;
+    display: flex;
+    width: 82%;
+    margin-top: 45px;
+    margin-left: 19px;
+
+  }
+  img{
+    display: block;
+    height: 60px;
+    width: 80px;
+    margin-top: 17px;
+    margin-left: 67px;
+
+  }
+
+
+  p{
+    font-size: 11px;
+    margin-top: 3px;
+    background: #ff000000;
+    height: 17px;
+    width: 38px;
+    margin-left: 79%;
+    border: 1px solid #00000045;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: -4px;
+  }
+}
+
+
+
