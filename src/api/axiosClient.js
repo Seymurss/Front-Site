@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "https://back-site-2.onrender.com/api",
+  baseURL: "http://localhost:8000/api",
 });
 
 axiosClient.interceptors.request.use((config) => {
@@ -14,3 +14,4 @@ axiosClient.interceptors.request.use((config) => {
 });
 
 export default axiosClient;
+ 
