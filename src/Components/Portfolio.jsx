@@ -17,7 +17,7 @@ const Portfolio = () => {
   useEffect(() => {
     const getProjects = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/projects");
+        const response = await fetch("https://back-site-2.onrender.com/api/projects");
         const data = await response.json();
         setProjects(data);
       } catch (error) {
@@ -57,7 +57,7 @@ const Portfolio = () => {
           >
             <div className="imgbox">
               <img
-                src={`http://localhost:8000/storage/${project.image_path}`}
+                src={`https://back-site-2.onrender.com/storage/${project.image_path}`}
                 alt={project.title}
                 style={{ width: '96%', height: '260px' }}
                 onError={(e) => {
