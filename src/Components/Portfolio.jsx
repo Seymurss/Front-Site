@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axiosClient from './api/axiosClient';  // axiosClient yolunu öz layihənə görə dəyiş
+import axiosClient from '../api/axiosClient';  // axiosClient yolunu öz layihənə görə dəyiş
 
 function ProjectsList() {
   const [projects, setProjects] = useState([]);
