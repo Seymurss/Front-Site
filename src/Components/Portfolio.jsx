@@ -15,12 +15,11 @@ const Portfolio = () => {
   }, []);
 
   useEffect(() => {
-    const getProjects = async () => { 
+    const getProjects = async () => {
       try {
-        const response = await fetch("https://back-site-2.onrender.com/projects");
+        const response = await fetch("https://back-site-2.onrender.com/api/projects");
         const data = await response.json();
         setProjects(data);
-        console.log(data)
       } catch (error) {
         console.error("Layihələri çəkməkdə xəta:", error);
       }
