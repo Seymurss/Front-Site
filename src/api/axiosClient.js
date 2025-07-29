@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "https://back-site-2.onrender.com/api",
+  baseURL: "https://back-site-2.onrender.com",
 });
 
 axiosClient.interceptors.request.use((config) => {
@@ -11,7 +11,7 @@ axiosClient.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${token}`; 
   }
   return config; 
-});
+}); 
 
 export default axiosClient;
  
