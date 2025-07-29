@@ -14,30 +14,20 @@ const Portfolio = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-useEffect(() => {
-  const getProjects = async () => {
-    try {
-      const response = await fetch("https://back-site-2.onrender.com/api/projects");
-
-      const text = await response.text(); // cavabı raw text kimi al
-
-      // 🔍 JSON olub olmadığını yoxla
+  useEffect(() => {
+    const getProjects = async () => { 
       try {
-        const json = JSON.parse(text); // parse etməyə çalış
-        setProjects(json);
-        console.log("✅ JSON cavab:", json);
-      } catch (parseError) {
-        console.error("❌ JSON parse alınmadı. HTML cavab gəldi:", text.slice(0, 300));
+        const response = await fetch("https://back-site-2.onrender.com/api/projects");
+        const data = await response.json();
+        setProjects(data);
+        console.log(data)
+      } catch (error) {
+        console.error("Layihələri çəkməkdə xəta:", error);
       }
+    };
 
-    } catch (error) {
-      console.error("Layihələri çəkməkdə xəta:", error);
-    }
-  };
-
-  getProjects();
-}, []);
-
+    getProjects();
+  }, []);
 
   const totalPages = Math.ceil(projects.length / projectsPerPage);
   const startIndex = (currentPage - 1) * projectsPerPage;
