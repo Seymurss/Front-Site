@@ -63,7 +63,7 @@ const Portfolio = () => {
                 style={{ width: '96%', height: '260px' }}
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = 'https://via.placeholder.com/300x200?text=No+Image';
+                  
                 }}
               />
             </div>
