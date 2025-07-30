@@ -57,7 +57,9 @@ const Portfolio = () => {
           >
             <div className="imgbox">
               <img
-                src={`https://back-site-2.onrender.com/storage/app/public/${project.image_path}`}
+
+  src={`https://back-site-2.onrender.com/storage/${project.image_path}`}
+
 
                 alt={project.title}
                 style={{ width: '96%', height: '260px' }}
