@@ -29,9 +29,25 @@ function App() {
   return (
     <Router>
       {!backendReady && (
+
+        <>
         <div style={{ height: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Spinner />
         </div>
+          <div style={{ 
+            height: "100vh", 
+            display: "flex", 
+            flexDirection: "column", 
+            alignItems: "center", 
+            justifyContent: "center", 
+            gap: "20px"
+          }}>
+            <Spinner />
+            <p style={{ color: "#69717d", fontSize: "16px" }}>
+              Please wait ~30 seconds while the backend wakes up...
+            </p>
+          </div>
+          </>
       )}
 
       {backendReady && (
