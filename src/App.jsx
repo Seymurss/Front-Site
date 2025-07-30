@@ -4,9 +4,15 @@ import MainLayout from './Components/MainLayout';
 import Login from './Components/Login';
 import AdminPanel from './Components/AdminPanel';
 import PrivateRoute from './authtenticate/PrivateRoute';
+import { useEffect } from 'react';
 
 
 function App() {
+
+  useEffect(() => {
+    fetch("https://back-site.onrender.com"); 
+  }, []);
+
   return (
     <Router> 
       <Routes>
