@@ -43,7 +43,7 @@ const AdminPanel = () => {
       project_url: "",
       image: null,
     });
-  };
+  }; 
 
   const handleSubmit = (e) => {
     e.preventDefault();

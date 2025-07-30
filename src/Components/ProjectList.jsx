@@ -92,7 +92,8 @@ const ProjectList = ({ projects, editProject, deleteProject }) => {
             {p.image_path && (
               <div style={styles.imageWrapper}>
                 <img
-                  src={`http://localhost:8000/storage/${p.image_path}`}
+                  // src={`http://localhost:8000/storage/${p.image_path}`}
+                  src={`https://back-site-2.onrender.com/${project.image_path}`}
                   alt={p.title}
                   style={styles.image}
                 />
