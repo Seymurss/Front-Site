@@ -6,11 +6,11 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:8000/api/admin/login", {
+    fetch("https://back-site-2.onrender.com/api/admin/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
