@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    fetch("https://back-site.onrender.com"); 
+    fetch("https://back-site-2.onrender.com/api/projects"); 
   }, []);
 
   return (
