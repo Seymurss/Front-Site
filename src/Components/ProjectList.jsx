@@ -92,7 +92,7 @@ const ProjectList = ({ projects, editProject, deleteProject }) => {
             {p.image_path && (
               <div style={styles.imageWrapper}>
                 <img
-                  src={`https://back-site-2.onrender.com/${project.image_path}`}
+                  src={`https://back-site-2.onrender.com/${p.image_path}`}
                   alt={p.title}
                   style={styles.image}
                 />
