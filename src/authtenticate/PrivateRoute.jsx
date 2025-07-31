@@ -8,7 +8,7 @@ const PrivateRoute = ({ children }) => {
     // Token yoksa login sayfasına yönlendir
     return <Navigate to="/login" replace />;
   }
-
+ 
   return children;
 };
 

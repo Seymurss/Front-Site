@@ -28,7 +28,11 @@ const AdminPanel = () => {
   const fetchProjects = () => {
     axiosClient
       .get("/projects")
-      .then((res) => setProjects(res.data))
+      .then((res) => {
+        console.log("Backenddən gələn layihələr:", res.data);
+        setProjects(res.data)
+      })
+
       .catch((err) => {
         console.error("Layihələri almaqda xəta:", err);
         if (err.response && err.response.status === 401) {
