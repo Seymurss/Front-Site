@@ -17,14 +17,25 @@ const AdminPanel = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchProjects();
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/login");
+    } else {
+      fetchProjects();
+    }
   }, []);
 
   const fetchProjects = () => {
     axiosClient
       .get("/projects")
       .then((res) => setProjects(res.data))
-      .catch(console.error);
+      .catch((err) => {
+        console.error("Layihələri almaqda xəta:", err);
+        if (err.response && err.response.status === 401) {
+          localStorage.removeItem("token");
+          navigate("/login");
+        }
+      });
   };
 
   const handleChange = (e) => {
@@ -43,7 +54,7 @@ const AdminPanel = () => {
       project_url: "",
       image: null,
     });
-  }; 
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,7 +74,10 @@ const AdminPanel = () => {
         fetchProjects();
         resetForm();
       })
-      .catch(console.error);
+      .catch((err) => {
+        console.error("Layihə göndərərkən xəta:", err);
+        alert("Layihəni əlavə etmək mümkün olmadı.");
+      });
   };
 
   const editProject = (project) => {
@@ -81,7 +95,10 @@ const AdminPanel = () => {
       axiosClient
         .delete(`/projects/${id}`)
         .then(() => fetchProjects())
-        .catch(console.error);
+        .catch((err) => {
+          console.error("Layihəni silərkən xəta:", err);
+          alert("Silinmə uğursuz oldu.");
+        });
     }
   };
 
