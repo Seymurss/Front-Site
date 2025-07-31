@@ -10,7 +10,7 @@ import { Row, Col } from 'react-bootstrap';
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
+    name: '', 
     surname: '',
     subject: '',
     message: '',

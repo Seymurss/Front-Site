@@ -42,9 +42,8 @@ function App() {
             justifyContent: "center", 
             gap: "20px"
           }}>
-            <Spinner />
             <p style={{ color: "#69717d", fontSize: "16px" }}>
-              Please wait ~30 seconds while the backend wakes up...
+              <Spinner />  Please wait ~30 or 120 seconds while the backend wakes up...
             </p>
           </div>
           </>

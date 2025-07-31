@@ -28,11 +28,11 @@ const Header = () =>{
                             <span>Seymur Farziyev</span>
                             <p>Back - End Developer</p>
                             <div className="profilsosial">
-                                <a><FaLinkedinIn/></a>
-                                <a><FaWhatsapp/></a>
-                                <a><FaGithub/></a>
-                                <a><IoLogoInstagram/></a>
-                                <a><FaFacebookF/></a>
+                                 <a href='https://www.linkedin.com/in/seymur-ferz-33b577288/' target="_blank"><FaLinkedinIn/></a>
+                                 <a href='https://wa.me/994559491633' target="_blank"><FaWhatsapp/></a>
+                                 <a href='https://github.com/Seymurss' target="_blank"><FaGithub/></a>
+                                 <a href='https://www.instagram.com/seymur_ig/' target="_blank"><IoLogoInstagram/></a>
+                                 <a href='https://www.facebook.com/share/128zgjyq2w7/' target="_blank"><FaFacebookF/></a>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const Header = () =>{
                         <div><h1>02</h1><p>Years<br/> of Experance</p></div>
                         <div><h1>40</h1><p>+<br/> Project</p></div>
                         <div>
-                            <a href="#0" class="butn butn-md butn-bord radius-5 skew">
+                            <a href="../files/Seymur_Farziyev_CV.pdf" download="Seymur_Farziyev_CV" class="butn butn-md butn-bord radius-5 skew">
                                 <span>Download C.V</span>
                             </a>
                         </div>
